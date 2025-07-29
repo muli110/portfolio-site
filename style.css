@@ -69,3 +69,10 @@ footer {
   width: 100%;
   border-top: 1px solid #333;
 }
+/* Teal section headers */
+#about h2,
+#projects h2,
+#contact h2 {
+  color: #00bcd4;
+}
+
