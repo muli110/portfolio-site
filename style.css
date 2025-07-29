@@ -48,6 +48,12 @@ h1, h2 {
   margin-bottom: 1rem;
   font-weight: 600;
 }
+h2 {
+  color: #005f73; /* dark teal */
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
 
 ul {
   list-style: none;
