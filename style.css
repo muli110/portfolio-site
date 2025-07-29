@@ -1,5 +1,7 @@
-*body {
+body {
   background-color: red !important;
+  color: white !important;
+  font-size: 30px;
 }
  {
   margin: 0;
