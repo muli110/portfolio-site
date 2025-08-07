@@ -1,76 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Yasar</title>
-<link rel="stylesheet" href="https://muli110.github.io/portfolio-site/style.css">
-
-
-</head>
-<body>
-  <header>
-    <h1>Yasar Ahmed</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Upocming web developer building my first site.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Portfolio Website (this one!)</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yibna001@gmail.com</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Yasar Ahmed</p>
-  </footer><head>
-  <!-- Basic SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yasar Ahmed | Web Developer & Copywriter</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Full-stack developer and copywriter creating clean, fast, and functional websites. Based in Kenya.">
 
-  <!-- Keywords (optional for modern SEO but good for clarity) -->
-  <meta name="keywords" content="Yasar Ahmed, web developer, copywriter, portfolio, Kenya, Tailwind CSS, PHP, MySQL">
-
-  <!-- Author -->
+  <!-- Basic SEO -->
+  <meta name="description" content="Web developer and copywriter creating clean, fast, and functional websites. Based in Kenya.">
+  <meta name="keywords" content="Yasar Ahmed, web developer, copywriter, portfolio, Kenya, landing pages">
   <meta name="author" content="Yasar Ahmed">
 
-  <!-- Open Graph (Social Media Preview) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Yasar Ahmed | Web Developer & Copywriter">
   <meta property="og:description" content="I create clean, fast, functional websites with style. View my projects and get in touch.">
   <meta property="og:image" content="https://YOUR_SITE_URL/preview.jpg">
+<<<<<<< HEAD
   <meta property="og:url" content="https://muli110.github.io/portfolio-site/">
+=======
+  <meta property="og:url" content="https://YOUR_SITE_URL">
+>>>>>>> d35ce099e573a3b963c7d42d5814c8239e24dd8e
   <meta property="og:type" content="website">
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Yasar Ahmed | Web Developer & Copywriter">
-  <meta name="twitter:description" content="Full-stack developer and copywriter creating clean, fast, and functional websites.">
+  <meta name="twitter:description" content="Web developer and copywriter creating clean, fast, and functional websites.">
   <meta name="twitter:image" content="https://YOUR_SITE_URL/preview.jpg">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://YOUR_SITE_URL/favicon.png">
-
-  <!-- Fonts & Styles -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Quick note:
+       Add `section { min-height: 100vh; }` to your style.css (or keep it smaller if you prefer).
+       That forces scrolling so you can see the fade-in animations in action.
+  -->
 </head>
+<body>
 
-</body>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <h1 class="logo">Yasar Ahmed</h1>
 
+      <!-- Mobile menu button (script expects .menu-btn) -->
+      <div class="menu-btn" aria-hidden="true">
+        <div class="menu-btn__burger"></div>
+      </div>
 
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="fade-in">
+    <div class="hero-content">
+      <h2>Hi — I’m Yasar.</h2>
+      <p>
+        I build landing pages and small web apps that actually convert. I write copy that gets attention and code that doesn’t break. Simple. Fast. Effective.
+      </p>
+      <a href="#projects" class="btn">See Recent Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I’m a web developer and copywriter from Kenya. I focus on getting products in front of people fast — clean pages, clear offers, measurable results.
+      I don't chase fancy frameworks for the sake of it. I pick tools that ship faster and keep maintenance costs low.
+    </p>
+
+    <p>
+      My approach: I write the words that sell, and I build the page that sells them. If the client wants speed and results, I deliver both.
+    </p>
+
+    <ul>
+      <li>Landing pages & one-page funnels</li>
+      <li>Copywriting for ads, email, and pages</li>
+      <li>Small web apps (PHP / MySQL) and utilities</li>
+      <li>Responsive, fast, and easy-to-update designs</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+
+    <p style="color: #cfcfcf; margin-bottom: 1rem;">
+      A few things I built or shipped recently. Click any “View” to open the project (placeholders for now).
+    </p>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+          The site you’re on — rebuilt from scratch to be fast, responsive, and simple to update. Designed to sell the skill, not distract from it.
+        </p>
+        <a href="#" target="_blank" rel="noopener">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Password Vault</h3>
+        <p>
+          A private password manager prototype using PHP + MySQL. Focused on minimal UI, secure storage, and clear workflows.
+        </p>
+        <a href="#" target="_blank" rel="noopener">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Landing: Game Clip Editor</h3>
+        <p>
+          One-page marketing site for a mobile clip-editing tool. Core job: explain the benefit in 15 seconds and get people to install.
+        </p>
+        <a href="#" target="_blank" rel="noopener">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Lead Capture Funnel (Template)</h3>
+        <p>
+          Repeatable landing + email capture template. Built to be plug-and-play — copy in your offer, replace the image, launch.
+        </p>
+        <a href="#" target="_blank" rel="noopener">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>TikTok Content Landing</h3>
+        <p>
+          Landing page optimized for short-form creators who want to turn viewers into subscribers or buyers — short copy, bold CTA.
+        </p>
+        <a href="#" target="_blank" rel="noopener">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Custom Client Work (Example)</h3>
+        <p>
+          Custom landing pages and email sequences I build for clients — results-focused, fast turnaround, no fluff.
+        </p>
+        <a href="#" target="_blank" rel="noopener">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRA: Testimonials (fills space and feels real) -->
+  <section id="testimonials" class="fade-in">
+    <h2>What people say</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Client — Fintech Startup</h3>
+        <p>"Launched their landing page in 3 days. Conversions improved the first week. Solid work."</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Creator — Video Editor</h3>
+        <p>"Copy was tight, the page loaded fast, and sign-ups doubled after the new funnel. No nonsense, good results."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>
+      Want a fast landing page or copy that converts? Send your offer, price, and deadline to
+      <a href="mailto:yibna001@gmail.com">yibna001@gmail.com</a> — I’ll tell you what to change to get better results.
+    </p>
+
+    <p>
+      Or send a short brief: what you sell, who you sell to, and what success looks like. I’ll build a plan you can use.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Yasar Ahmed. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
